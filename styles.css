@@ -22,13 +22,14 @@
     border-radius: 8px;
 }
 .border-grid{
-    display: flex;
-    justify-content: center;
-    align-items: first baseline;
+    display: grid;
+    justify-content: baseline;
+    align-items: center;
     background-color: rgb(234, 194, 201);
 }
 .error{
     color: red;
+    
 
 }
 .hidden{
