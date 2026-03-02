@@ -40,11 +40,18 @@ async function searchCountry(countryName) {
 
             }
         }
+        else{
+            borderingCountries.innerHTML = '<p>No bordering countries';
+        }
         
     }
 
     catch{
+        errorMessage.textContent = error.message;
+        errorMessage.classList.remove('hidden');
 
     }
-    
+    finally{
+        loadingSpinner.classList.add('hidden');
+    }
 }
